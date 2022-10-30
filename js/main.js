@@ -54,43 +54,43 @@ $("#yoru").on("click" , function(){
 // ここから朝＋
 var happyasa = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
 var happyasaMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
-];
+    "https://www.youtube.com/embed/P__rOlVnId4", //オーケストララジオ体操第一
+    "https://www.youtube.com/embed/3pP3bDi_GOg",//大阪弁ラジオ体操
+    "https://www.youtube.com/embed/_YZZfaMGEOU"//ラジオ体操第一
+]
 
 var sleepyasa = ['目を覚まして', '朝ご飯はパンケーキ','起きろー'];
 var sleepyasaMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "https://www.youtube.com/embed/xR4qXUwsp9Q", //xjapan
+    "https://www.youtube.com/embed/ZSZoJrNKCJ4",//ストレッチ
+    "https://www.youtube.com/embed/7tWAjt8B-cM"//jazz
 ];
 
 var angryasa = ['いいことあるよ', '大丈夫','楽しいことを考えて'];
 var angryasaMov = [ 
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "https://www.youtube.com/embed/n5hGn0uA9G8", //綺麗な曲
+    "https://www.youtube.com/embed/E1UM8d8XPmw",//可愛い犬
+    ""
 ];
 
 var sadasa = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
 var sadasaMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ];
 var borlingasa =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
 var borlingasaMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ];
 
 var hungryasa = ['落ち着いて','怒ってもいいことないよ','最高にHappy'];
 var hungryasaMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ]
 
 
@@ -98,43 +98,43 @@ var hungryasaMov = [
 // ここから夜＋
 var happyyoru = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
 var happyyoruMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ];
 
 var sleepyyoru = ['目を覚まして', '朝ご飯はパンケーキ','起きろー'];
 var sleepyyoruMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ];
 
 var angryyoru = ['いいことあるよ', '大丈夫','楽しいことを考えて'];
 var angryyoruMov = [ 
-    "https://www.youtube.com/embed/RNYUCIt4Fi0",
-    "https://www.youtube.com/embed/sWuDwn5_8KE",
-    "https://www.youtube.com/embed/GJSmXL9_oHY"
+    "",
+    "",
+    ""
 ];
 
 var sadyoru = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
 var sadyoruMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ];
 var borlingyoru =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
 var borlingyoru = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ];
 
 var hungryyoru = ['落ち着いて','怒ってもいいことないよ','最高にHappy'];
 var hungryyoruMov = [
-    "https://www.youtube.com/embed/ouEzZbj1BkQ", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/watch?v=6YWxiCPXOis",
-    "https://youtu.be/YT0X1gZ3k5s"
+    "", //iframe埋め込み用のURL入れる
+    "",
+    ""
 ]
 
 
