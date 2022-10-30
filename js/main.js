@@ -7,8 +7,7 @@ $('#title').on('click', function(){
 // }
 
 
-
-// 
+// 十の位の箱を決める
 let tensmusic =""; //十の位の箱 今の気分
 $("#happy").on("click" , function(){
     tensPlace = "1";
@@ -40,54 +39,324 @@ $("#hungry").on("click" , function(){
 
 
 
-
-
-
 //一の位を決める
 let onesmusic=""; //一の位の箱 今の時間(朝昼夜)
 
 $("#asa").on("click" , function(){
-   onesPlace = "1";
+   onesmusic = "1";
 });
 
 $("#hiru").on("click" , function(){
-    onesPlace = "2";
+    onesmusic = "2";
 });
 
 $("#yoru").on("click" , function(){
-  onesPlace = "3";
+  onesmusic = "3";
 });
+
+
+
+
+
+//選ばれたら文字で今日の一句が出てきて、連動したおすすめ動画も表示される
+
+// ここから朝＋
+var asahappy = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
+var asahappyMov = [
+    "https://www.youtube.com/embed/OL8o03u8l2Y", //iframe埋め込み用のURL入れる
+    "https://www.youtube.com/embed/kDHVcnykE0Q",
+    "https://www.youtube.com/embed/q3ui4ZPPIPI"
+];
+
+var asasleepy = ['目を覚まして', '朝ご飯はパンケーキ','起きろー'];
+var asasleepyMov = [
+    "https://www.youtube.com/embed/Au-XRzpEjuA",
+    "https://www.youtube.com/embed/Jx-tqntWPCM",
+    "https://www.youtube.com/embed/nwJlMGMbmpw"
+];
+
+var asaangry = ['いいことあるよ', '大丈夫','楽しいことを考えて'];
+var asaangryMov = [ 
+    "https://www.youtube.com/embed/RNYUCIt4Fi0",
+    "https://www.youtube.com/embed/sWuDwn5_8KE",
+    "https://www.youtube.com/embed/GJSmXL9_oHY"
+];
+
+var asasad = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
+var asasadMov = [
+    "https://tabelog.com/tokyo/A1313/A131303/13227050/",
+    "https://tabelog.com/tokyo/A1313/A131307/13026915/",
+    "https://tabelog.com/tokyo/A1313/A131303/13264944/"
+];
+var asaborling =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
+var asaborlingMov = [
+    "https://tabelog.com/tokyo/A1313/A131303/13121463/",
+    "https://tabelog.com/tokyo/A1313/A131303/13091906/",
+    "https://tabelog.com/tokyo/A1313/A131303/13185772/"
+];
+
+var asahungry = ['落ち着いて','怒ってもいいことないよ','最高にHappy'];
+var asahungryMov = [
+    "https://tabelog.com/tokyo/A1313/A131303/13040987/",
+    "https://tabelog.com/tokyo/A1313/A131303/13166405/",
+    "https://tabelog.com/tokyo/A1313/A131303/13172776/"
+]
+
+// ここから昼＋
+var hiruhappy = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
+var hiruhappyMov = [
+    "https://www.youtube.com/embed/OL8o03u8l2Y", //iframe埋め込み用のURL入れる
+    "https://www.youtube.com/embed/kDHVcnykE0Q",
+    "https://www.youtube.com/embed/q3ui4ZPPIPI"
+];
+
+var hirusleepy = ['目を覚まして', '朝ご飯はパンケーキ','起きろー'];
+var hirusleepyMov = [
+    "https://www.youtube.com/embed/Au-XRzpEjuA",
+    "https://www.youtube.com/embed/Jx-tqntWPCM",
+    "https://www.youtube.com/embed/nwJlMGMbmpw"
+];
+
+var hiruangry = ['いいことあるよ', '大丈夫','楽しいことを考えて'];
+var hiruangryMov = [ 
+    "https://www.youtube.com/embed/RNYUCIt4Fi0",
+    "https://www.youtube.com/embed/sWuDwn5_8KE",
+    "https://www.youtube.com/embed/GJSmXL9_oHY"
+];
+
+var hirusad = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
+var hirusadMov = [
+    "https://tabelog.com/tokyo/A1313/A131303/13227050/",
+    "https://tabelog.com/tokyo/A1313/A131307/13026915/",
+    "https://tabelog.com/tokyo/A1313/A131303/13264944/"
+];
+var hiruborling =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
+var hiruborling = [
+    "https://tabelog.com/tokyo/A1313/A131303/13121463/",
+    "https://tabelog.com/tokyo/A1313/A131303/13091906/",
+    "https://tabelog.com/tokyo/A1313/A131303/13185772/"
+];
+
+var hiruhungry = ['落ち着いて','怒ってもいいことないよ','最高にHappy'];
+var hiruhungryMov = [
+    "https://tabelog.com/tokyo/A1313/A131303/13040987/",
+    "https://tabelog.com/tokyo/A1313/A131303/13166405/",
+    "https://tabelog.com/tokyo/A1313/A131303/13172776/"
+]
+
+
+// ここから夜＋
+var yoruhappy = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
+var yoruhappyMov = [
+    "https://www.youtube.com/embed/OL8o03u8l2Y", //iframe埋め込み用のURL入れる
+    "https://www.youtube.com/embed/kDHVcnykE0Q",
+    "https://www.youtube.com/embed/q3ui4ZPPIPI"
+];
+
+var yorusleepy = ['目を覚まして', '朝ご飯はパンケーキ','起きろー'];
+var yorusleepyMov = [
+    "https://www.youtube.com/embed/Au-XRzpEjuA",
+    "https://www.youtube.com/embed/Jx-tqntWPCM",
+    "https://www.youtube.com/embed/nwJlMGMbmpw"
+];
+
+var yoruangry = ['いいことあるよ', '大丈夫','楽しいことを考えて'];
+var yoruangryMov = [ 
+    "https://www.youtube.com/embed/RNYUCIt4Fi0",
+    "https://www.youtube.com/embed/sWuDwn5_8KE",
+    "https://www.youtube.com/embed/GJSmXL9_oHY"
+];
+
+var yorusad = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
+var yorusadMov = [
+    "https://tabelog.com/tokyo/A1313/A131303/13227050/",
+    "https://tabelog.com/tokyo/A1313/A131307/13026915/",
+    "https://tabelog.com/tokyo/A1313/A131303/13264944/"
+];
+var yoruborling =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
+var yoruborling = [
+    "https://tabelog.com/tokyo/A1313/A131303/13121463/",
+    "https://tabelog.com/tokyo/A1313/A131303/13091906/",
+    "https://tabelog.com/tokyo/A1313/A131303/13185772/"
+];
+
+var yoruhungry = ['落ち着いて','怒ってもいいことないよ','最高にHappy'];
+var yoruhungryMov = [
+    "https://tabelog.com/tokyo/A1313/A131303/13040987/",
+    "https://tabelog.com/tokyo/A1313/A131303/13166405/",
+    "https://tabelog.com/tokyo/A1313/A131303/13172776/"
+]
+
+
+
+
+
 
 
 
 
 
 // if文
-
-
-let number = tensPlace + onesPlace; //箱の番号を決める
-    const random = Math.floor(Math.random()*ieWasyoku.length);//配列の何番目を取り出すか決める
+let number = tensmusic + onesmusic; //箱の番号を決める
+    const random = Math.floor(Math.random()*asahappy.length);//配列の何番目を取り出すか決める
     let randomMov = document.getElementById("mov"); //movの属性を取り出す
     const showMov = $ ("#mov").show();
 
-    if(number == 11 ){ //和食で家が選ばれたら
+    // happy
+    if(number == 11 ){ //happy asa が選ばれたら
         setTimeout(function(){
-        $("#lunchMessage").html(ieWasyoku[random]);
+        $("#todayMessage").html(happyasa[random]);
         showMov;
-        randomMov.src = (ieWasyokuMov[random]); //movで取り出した属性を書き換える;
+        randomMov.src = (happyasaMov[random]); //movで取り出した属性を書き換える;
         number = 0;},1000);
     
-    } else if(number == 21) { //洋食で外が選ばれたら
-        $("#lunchMessage").html(ieYousyoku[random]);
+    } else if(number == 21) { //happy hiruが選ばれたら
+        $("#todayMessage").html(happyhiru[random]);
         showMov;
-        randomMov.src = (ieYousyokuMov[random]);
+        randomMov.src = (happyhiruMov[random]);
         number = 0;
-あ
-    } else if(number == 31) { //中華で家が選ばれたら
-        $("#lunchMessage").html(ieCyuka[random]);
+
+    } else if(number == 31) { //happy yoruが選ばれたら
+        $("#todayMessage").html(happyyoru[random]);
         showMov;
-        randomMov.src = (iecyukaMov[random]);
+        randomMov.src = (happyyoruMov[random]);
         number = 0;
+
+
+
+        // sleeppy
+        if(number == 11 ){ //sleepy asa が選ばれたら
+          setTimeout(function(){
+          $("#todayMessage").html(sleepyasa[random]);
+          showMov;
+          randomMov.src = (sleepyasaMov[random]); //movで取り出した属性を書き換える;
+          number = 0;},1000);
+      
+      } else if(number == 21) { //sleepy hituが選ばれたら
+          $("#todayMessage").html(sleepyhiru[random]);
+          showMov;
+          randomMov.src = (sleepyhiruMov[random]);
+          number = 0;
+  
+      } else if(number == 31) { //sleepy yoruが選ばれたら
+          $("#todayMessage").html(sleepyyoru[random]);
+          showMov;
+          randomMov.src = (sleepyyoruMov[random]);
+          number = 0;
+
+
+          // angry
+
+          if(number == 11 ){ //angry asaが選ばれたら
+            setTimeout(function(){
+            $("#todayMessage").html(angryasa[random]);
+            showMov;
+            randomMov.src = (angryasaMov[random]); //movで取り出した属性を書き換える;
+            number = 0;},1000);
+        
+        } else if(number == 21) { //angry hiruが選ばれたら
+            $("#todayMessage").html(angryhiru[random]);
+            showMov;
+            randomMov.src = (angryhiruMov[random]);
+            number = 0;
+    
+        } else if(number == 31) { //angry yoruが選ばれたら
+            $("#todayMessage").html(angryyoru[random]);
+            showMov;
+            randomMov.src = (angryyoruMov[random]);
+            number = 0;
+
+
+            
+
+          //  sad
+            if(number == 11 ){ //sad asaが選ばれたら
+              setTimeout(function(){
+              $("#todayMessage").html(sadasa[random]);
+              showMov;
+              randomMov.src = (sadasaMov[random]); //movで取り出した属性を書き換える;
+              number = 0;},1000);
+          
+          } else if(number == 21) { //sad hiruが選ばれたら
+              $("#todayMessage").html(sadhiru[random]);
+              showMov;
+              randomMov.src = (sadhiruMov[random]);
+              number = 0;
+      
+          } else if(number == 31) { //sad yoruが選ばれたら
+              $("#todayMessage").html(sadyoru[random]);
+              showMov;
+              randomMov.src = (sadyoruMov[random]);
+              number = 0;
+
+
+
+              // borlig
+              if(number == 11 ){ //borling asaが選ばれたら
+                setTimeout(function(){
+                $("#todayMessage").html(borlingasa[random]);
+                showMov;
+                randomMov.src = (borlingasaMov[random]); //movで取り出した属性を書き換える;
+                number = 0;},1000);
+            
+            } else if(number == 21) { //borling hiruが選ばれたら
+                $("#todayMessage").html(borlinghiru[random]);
+                showMov;
+                randomMov.src = (borlinghiruMov[random]);
+                number = 0;
+        
+            } else if(number == 31) { //borling yoruが選ばれたら
+                $("#todayMessage").html(borlingyoru[random]);
+                showMov;
+                randomMov.src = (borlingyoruMov[random]);
+                number = 0;
+      
+
+
+                // angry
+
+                if(number == 11 ){ //angry asaが選ばれたら
+                  setTimeout(function(){
+                  $("#todayMessage").html(angryasa[random]);
+                  showMov;
+                  randomMov.src = (angryasaMov[random]); //movで取り出した属性を書き換える;
+                  number = 0;},1000);
+              
+              } else if(number == 21) { //angry hiruが選ばれたら
+                  $("#todayMessage").html(angryhiru[random]);
+                  showMov;
+                  randomMov.src = (angryhiruMov[random]);
+                  number = 0;
+          
+              } else if(number == 31) { //angry yoruが選ばれたら
+                  $("#todayMessage").html(angryyoru[random]);
+                  showMov;
+                  randomMov.src = (angryyoruMov[random]);
+                  number = 0;
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     } else if(number == 12) {
         $("#lunchMessage").html(sotoWasyoku[random]);
