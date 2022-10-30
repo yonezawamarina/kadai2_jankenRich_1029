@@ -1,12 +1,8 @@
 
-// シーン１
 
 
 
-
-
-
-// シーン２のcss
+// シーン２
 
 // 十の位を決める
 let tensmusic =""; //十の位 今の気分
@@ -47,7 +43,6 @@ $("#asa").on("click" , function(){
 $("#yoru").on("click" , function(){
   onesmusic = "2";
 });
-
 
 
 
@@ -139,39 +134,32 @@ var hungryyoruMov = [
 ]
 
 
-
-
-
-                $("#recommendBtn").on("click" , function(){
-                    // ハート現れて消える
-                    // $(".loader").show( );
-                    // setTimeout(function(){
-                    //     $(".loader").fadeOut()
-                    // },1500);
+$("#recommendBtn").on("click" , function(){
+    
                 
-                    let number = tensmusic + onesmusic; //2桁の番号を決める
-                    const random = Math.floor(Math.random()*happyasa.length);//配列の何番目を取り出すか決める
-                    let randomMov = document.getElementById("mov"); //movの属性を取り出す
-                    const showMov = $ ("#mov").show();
+ let number = tensmusic + onesmusic; //2桁の番号を決める
+ const random = Math.floor(Math.random()*happyasa.length);//配列の何番目を取り出すか決める
+ let randomMov = document.getElementById("mov"); //movの属性を取り出す
+ const showMov = $ ("#mov").show();
                 
-                    if(number == 11 ){ //happyasaが選ばれたら
-                        setTimeout(function(){
-                        $("#todayMessage").html(happyasa[random]);
-                        showMov;
-                        randomMov.src = (happyasaMov[random]); //movで取り出した属性を書き換える;
-                        number = 0;},1000);
+ if(number == 11 ){ //happyasaが選ばれたら
+     setTimeout(function(){
+     $("#todayMessage").html(happyasa[random]);
+      showMov;
+      randomMov.src = (happyasaMov[random]); //movで取り出した属性を書き換える;
+      number = 0;},1000);
                     
-                    } else if(number == 12) {  //happyyoruが選ばれたら
-                        $("#todayMessage").html(happyyoru[random]);
-                        showMov;
-                        randomMov.src = (happyyoruMov[random]);
-                        number = 0;
+ } else if(number == 12) {  //happyyoruが選ばれたら
+      $("#todayMessage").html(happyyoru[random]);
+      showMov;
+      randomMov.src = (happyyoruMov[random]);
+      number = 0;
                 
-                    } else if(number == 21) { //sleepyasaが選ばれたら
-                        $("#todayMessage").html(sleepyasa[random]);
-                        showMov;
-                        randomMov.src = (sleepyasaMov[random]);
-                        number = 0;
+ } else if(number == 21) { //sleepyasaが選ばれたら
+      $("#todayMessage").html(sleepyasa[random]);
+      showMov;
+      randomMov.src = (sleepyasaMov[random]);
+      number = 0;
                 
                     } else if(number == 22) {//sleepyyoruが選ばれたら
                         $("#todayMessage").html(sleepyyoru[random]);
