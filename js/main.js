@@ -46,7 +46,7 @@ $("#yoru").on("click" , function(){
 
 
 
-
+// 格言とお勧め動画
 // ここから朝＋
 var happyasa = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
 var happyasaMov = [
@@ -133,6 +133,9 @@ var hungryyoruMov = [
     "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ]
 
+
+
+// お勧めボタンをクリックした結果
 
 $("#recommendBtn").on("click" , function(){
     
