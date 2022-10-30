@@ -2,16 +2,6 @@
 // シーン１
 
 
-// なべさん参考タイトルを押すと音楽が流れる
-// $('#opening_audio').on('click', function(){
-//     document.getElementById( 'sound-file' ).play() ;
-//     });
-//     $('#sound-file').on('ended', function(){
-//     window.location.href = 'map.html';
-//   });
-
-
-
 
 
 
