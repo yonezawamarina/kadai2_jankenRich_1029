@@ -1,15 +1,22 @@
 
-$(function() {
-    // 非表示に設定
-    $(".scene1_btn").click(function() {
-    $("#scene1").css("display", "none");
-    $('#scene2_se').get(0).play();
+// シーン１
+
+
+// なべさん参考タイトルを押すと音楽が流れる
+$('#opening_audio').on('click', function(){
+    document.getElementById( 'sound-file' ).play() ;
     });
-    // 表示に設定
-    $(".scene1_btn").click(function() {
-    $("#scene2").css({"display":"block"});
-    });
-});
+    $('#sound-file').on('ended', function(){
+    window.location.href = 'map.html';
+  });
+
+  $('.title .small').on('click', function(){
+    window.location.href = 'map.html';
+  });
+
+
+
+
 
 
 
