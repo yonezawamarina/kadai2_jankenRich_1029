@@ -7,11 +7,11 @@ $('#title').on('click', function(){
 // }
 
 
-// 十の位の箱を決める
-let tensmusic =""; //十の位の箱 今の気分
+// 十の位を決める
+let tensmusic =""; //十の位 今の気分
 $("#happy").on("click" , function(){
-    tensPlace = "1";
-});
+    tensmusic = "1";
+}); 
 
 $("#sleepy").on("click" , function(){
     tensmusic = "2";
@@ -21,11 +21,9 @@ $("#angry").on("click" , function(){
     tensmusic = "3";
 });
 
-
 $("#sad").on("click" , function(){
   tensmusic = "4";
 });
-
 
 $("#borling").on("click" , function(){
   tensmusic = "5";
@@ -37,10 +35,8 @@ $("#hungry").on("click" , function(){
 
 
 
-
-
 //一の位を決める
-let onesmusic=""; //一の位の箱 今の時間(朝昼夜)
+let onesmusic=""; //一の位 今の時間(朝夜)
 
 $("#asa").on("click" , function(){
    onesmusic = "1";
@@ -50,7 +46,6 @@ $("#asa").on("click" , function(){
 $("#yoru").on("click" , function(){
   onesmusic = "2";
 });
-
 
 
 
@@ -156,16 +151,16 @@ let number = tensmusic + onesmusic; //箱の番号を決める
     // happy
     if(number == 11 ){ //happy asa が選ばれたら
         setTimeout(function(){
-        $("#todayMessage").html(happyasa[random]);
+        $("#todayMessage").html(asahappy[random]);
         showMov;
-        randomMov.src = (happyasaMov[random]); //movで取り出した属性を書き換える;
+        randomMov.src = (asahappyMov[random]); //movで取り出した属性を書き換える;
         number = 0;},1000);
     
 
     } else if(number == 12) { //happy yoruが選ばれたら
-        $("#todayMessage").html(happyyoru[random]);
+        $("#todayMessage").html(yoruhappy[random]);
         showMov;
-        randomMov.src = (happyyoruMov[random]);
+        randomMov.src = (yoruhappyMov[random]);
         number = 0;
 
 
@@ -173,16 +168,16 @@ let number = tensmusic + onesmusic; //箱の番号を決める
         // sleeppy
         if(number == 21 ){ //sleepy asa が選ばれたら
           setTimeout(function(){
-          $("#todayMessage").html(sleepyasa[random]);
+          $("#todayMessage").html(asasleepy[random]);
           showMov;
-          randomMov.src = (sleepyasaMov[random]); //movで取り出した属性を書き換える;
+          randomMov.src = (asasleepyMov[random]); //movで取り出した属性を書き換える;
           number = 0;},1000);
     
   
       } else if(number == 22) { //sleepy yoruが選ばれたら
-          $("#todayMessage").html(sleepyyoru[random]);
+          $("#todayMessage").html(yorusleepy[random]);
           showMov;
-          randomMov.src = (sleepyyoruMov[random]);
+          randomMov.src = (yorusleepyMov[random]);
           number = 0;
 
 
@@ -190,34 +185,33 @@ let number = tensmusic + onesmusic; //箱の番号を決める
 
           if(number == 31 ){ //angry asaが選ばれたら
             setTimeout(function(){
-            $("#todayMessage").html(angryasa[random]);
+            $("#todayMessage").html(asaangry[random]);
             showMov;
-            randomMov.src = (angryasaMov[random]); //movで取り出した属性を書き換える;
+            randomMov.src = (asaangryMov[random]); //movで取り出した属性を書き換える;
             number = 0;},1000);
     
     
         } else if(number == 32) { //angry yoruが選ばれたら
-            $("#todayMessage").html(angryyoru[random]);
+            $("#todayMessage").html(yoruangry[random]);
             showMov;
-            randomMov.src = (angryyoruMov[random]);
+            randomMov.src = (yoruangryMov[random]);
             number = 0;
 
 
             
-
           //  sad
             if(number == 41 ){ //sad asaが選ばれたら
               setTimeout(function(){
-              $("#todayMessage").html(sadasa[random]);
+              $("#todayMessage").html(asasad[random]);
               showMov;
-              randomMov.src = (sadasaMov[random]); //movで取り出した属性を書き換える;
+              randomMov.src = (asasadMov[random]); //movで取り出した属性を書き換える;
               number = 0;},1000);
           
       
           } else if(number == 42) { //sad yoruが選ばれたら
-              $("#todayMessage").html(sadyoru[random]);
+              $("#todayMessage").html(yorusad[random]);
               showMov;
-              randomMov.src = (sadyoruMov[random]);
+              randomMov.src = (yorusadMov[random]);
               number = 0;
 
 
@@ -225,34 +219,33 @@ let number = tensmusic + onesmusic; //箱の番号を決める
               // borlig
               if(number == 51 ){ //borling asaが選ばれたら
                 setTimeout(function(){
-                $("#todayMessage").html(borlingasa[random]);
+                $("#todayMessage").html(asaborling[random]);
                 showMov;
-                randomMov.src = (borlingasaMov[random]); //movで取り出した属性を書き換える;
+                randomMov.src = (asaborlingMov[random]); //movで取り出した属性を書き換える;
                 number = 0;},1000);
   
         
             } else if(number == 52) { //borling yoruが選ばれたら
-                $("#todayMessage").html(borlingyoru[random]);
+                $("#todayMessage").html(yoruborling[random]);
                 showMov;
-                randomMov.src = (borlingyoruMov[random]);
+                randomMov.src = (yoruborlingMov[random]);
                 number = 0;
       
-
 
                 // angry
 
                 if(number == 61 ){ //angry asaが選ばれたら
                   setTimeout(function(){
-                  $("#todayMessage").html(angryasa[random]);
+                  $("#todayMessage").html(asaangry[random]);
                   showMov;
-                  randomMov.src = (angryasaMov[random]); //movで取り出した属性を書き換える;
+                  randomMov.src = (asaangryMov[random]); //movで取り出した属性を書き換える;
                   number = 0;},1000);
               
           
               } else if(number == 62) { //angry yoruが選ばれたら
-                  $("#todayMessage").html(angryyoru[random]);
+                  $("#todayMessage").html(yoruangry[random]);
                   showMov;
-                  randomMov.src = (angryyoruMov[random]);
+                  randomMov.src = (yoruangryMov[random]);
                   number = 0;
       
 
@@ -262,51 +255,3 @@ let number = tensmusic + onesmusic; //箱の番号を決める
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    } else if(number == 12) {
-        $("#lunchMessage").html(sotoWasyoku[random]);
-        //3秒後にお店の食べログにとぶ
-        $("#mov").css("display" , "none");
-        $("#imgArea").html('<img src="img/pikabui.png" alt="">');
-        setTimeout(function(){
-        open(sotoWasyokuUrl[random], "_blank");},3000); 
-        number = 0;
-
-    } else if(number == 22) {
-        $("#lunchMessage").html(sotoYousyoku[random]);
-        $("#mov").css("display" , "none");
-        $("#imgArea").html('<img src="img/pikabui.png" alt="">');
-        setTimeout(function(){
-        open(sotoYousyokuUrl[random], "_blank");},3000); 
-        number = 0;
-
-    } else if (number == 32) {
-        $("#lunchMessage").html(sotoCyuka[random]);
-        $("#mov").css("display" , "none");
-        $("#imgArea").html('<img src="img/pikabui.png" alt="">');
-        setTimeout(function(){
-        open(sotoCyukaUrl[random], "_blank");},3000); 
-        number = 0;
-    
-    } else if(number === 0) {
-        alert("選択しなおしてください");
-
-    } else {
-        alert("ボタンは2つ押してください");
-    }
