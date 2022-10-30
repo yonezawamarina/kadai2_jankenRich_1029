@@ -9,7 +9,7 @@
 
 
 
-    
+
 // シーン２
 
 // 十の位を決める
@@ -56,41 +56,41 @@ $("#yoru").on("click" , function(){
 
 // 格言とお勧め動画
 // ここから朝＋
-var happyasa = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
+var happyasa = ['今日も頑張ろう','かきくけこ','あいうえお'];
 var happyasaMov = [
     "https://www.youtube.com/embed/P__rOlVnId4", //オーケストララジオ体操第一
     "https://www.youtube.com/embed/3pP3bDi_GOg",//大阪弁ラジオ体操
     "https://www.youtube.com/embed/_YZZfaMGEOU"//ラジオ体操第一
 ]
 
-var sleepyasa = ['目を覚まして', '朝ご飯はパンケーキ','起きろー'];
+var sleepyasa = ['さしすせそ', 'たちつてと','なにぬねの'];
 var sleepyasaMov = [
     "https://www.youtube.com/embed/xR4qXUwsp9Q", //xjapan
     "https://www.youtube.com/embed/ZSZoJrNKCJ4",//ストレッチ
     "https://www.youtube.com/embed/7tWAjt8B-cM"//jazz
 ];
 
-var angryasa = ['いいことあるよ', '大丈夫','楽しいことを考えて'];
+var angryasa = ['はひふへほ', 'まみむめも','やゆよ'];
 var angryasaMov = [ 
     "https://www.youtube.com/embed/n5hGn0uA9G8", //綺麗な曲
     "https://www.youtube.com/embed/E1UM8d8XPmw",//可愛い犬
     "www.youtube.com/embed/QSlY6Aq8M4A"//設楽さん名言
 ];
 
-var sadasa = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
+var sadasa = ['おえういあ' , 'こけくきか' , 'そせすしさ'];
 var sadasaMov = [
     "https://www.youtube.com/embed/e53CqX8TrlE", //名言
     "https://www.youtube.com/embed/vN_2KFrHz5s",//元気が出る歌
     "https://www.youtube.com/embed/IHKXePkEdQg"//東京03コント
 ];
-var borlingasa =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
+var borlingasa =['とてちとた', "のねぬにな" ,'ほへふひは'];
 var borlingasaMov = [
     "https://www.youtube.com/embed/KF4LGDy81Ic", //モチベが上がる名言
     "https://www.youtube.com/embed/-OHRY9HTfkc",//所さん名言
     "https://www.youtube.com/embed/lLF5hWK3IfY"//見てて飽きないお焼きの作り方
 ];
 
-var hungryasa = ['落ち着いて','怒ってもいいことないよ','最高にHappy'];
+var hungryasa = ['もめむみま','こんばんは','こんにちは'];
 var hungryasaMov = [
     "https://www.youtube.com/embed/JwFPuEX7lU8", //コンビニ朝ごはん
     "https://www.youtube.com/embed/MKPpy5zG0MM",//食パンレシピ
@@ -100,41 +100,41 @@ var hungryasaMov = [
 
 
 // ここから夜＋
-var happyyoru = ['今日も１日頑張りました','明日もいい日になりますように','最高の１日'];
+var happyyoru = ['おはよう','あいう','かきく'];
 var happyyoruMov = [
     "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
     "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
     "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
-var sleepyyoru = ['さっさと寝てしまおう', '今日も１日頑張りました','おやすみなさい'];
+var sleepyyoru = ['けおごち', 'はひふへ','あかさた'];
 var sleepyyoruMov = [
     "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
     "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
     "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
-var angryyoru = ['さっさと寝て忘れよう', '明日はきっと楽しいよ','落ち着いて～'];
+var angryyoru = ['のぬに', 'たちつ','てとなにぬ'];
 var angryyoruMov = [ 
     "https://www.youtube.com/embed/S-xjSO4Ucns",//焚火
     "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
     "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
-var sadyoru = ['楽しいことを考えよう' , '人間だものみちお' , '寝たらすべてわすれるよ'];
+var sadyoru = ['こけきう' , 'おえうい' , 'あかさた'];
 var sadyoruMov = [
     "https://www.youtube.com/embed/5dwcsX4QTwE", //熟睡ヨガ
     "https://www.youtube.com/embed/b-vxJT1EsfI",//お休みピアノ
     "https://www.youtube.com/embed/cGGn0u5NaPY"//日本の絶景
 ];
-var borlingyoru =['つまらないならさっさと寝ましょう', "明日の準備した？" ,'あいうえお'];
+var borlingyoru =['なにぬね', "こけきくか" ,'あいうえお'];
 var borlingyoru = [
     "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
     "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
     "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
-var hungryyoru = ['明日起きたらドカ食いしよう','水飲んで寝よう','我慢できないなら食べてもいいよ'];
+var hungryyoru = ['こんにちは','こんばんは','おえうい'];
 var hungryyoruMov = [
     "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
     "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
