@@ -50,7 +50,6 @@ $("#yoru").on("click" , function(){
 
 
 
-//選ばれたら文字で今日の一句が出てきて、連動したおすすめ動画も表示される
 
 // ここから朝＋
 var happyasa = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
@@ -142,14 +141,12 @@ var hungryyoruMov = [
 
 
 
-                // 例
-
-                $("#lunchBtn").on("click" , function(){
-                    //花が現れて消える
-                    $(".loader").show( );
-                    setTimeout(function(){
-                        $(".loader").fadeOut()
-                    },1500);
+                $("#recommendBtn").on("click" , function(){
+                    // ハート現れて消える
+                    // $(".loader").show( );
+                    // setTimeout(function(){
+                    //     $(".loader").fadeOut()
+                    // },1500);
                 
                     let number = tensmusic + onesmusic; //2桁の番号を決める
                     const random = Math.floor(Math.random()*happyasa.length);//配列の何番目を取り出すか決める
