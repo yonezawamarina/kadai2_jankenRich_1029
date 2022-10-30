@@ -161,77 +161,77 @@ $("#recommendBtn").on("click" , function(){
       randomMov.src = (sleepyasaMov[random]);
       number = 0;
                 
-                    } else if(number == 22) {//sleepyyoruが選ばれたら
-                        $("#todayMessage").html(sleepyyoru[random]);
-                        showMov;
-                        randomMov.src = (sleepyyoruMov[random]);
-                        number = 0;
+ } else if(number == 22) {//sleepyyoruが選ばれたら
+       $("#todayMessage").html(sleepyyoru[random]);
+        showMov;
+        randomMov.src = (sleepyyoruMov[random]);
+        number = 0;
                         
                 
-                    } else if(number == 31) {//angryasaが選ばれたら
-                        $("#todayMessage").html(angryasa[random]);
-                        showMov;
-                        randomMov.src = (angryasaMov[random]);
-                        number = 0;
+ } else if(number == 31) {//angryasaが選ばれたら
+        $("#todayMessage").html(angryasa[random]);
+        showMov;
+        randomMov.src = (angryasaMov[random]);
+        number = 0;
                         
-                    } else if (number == 32) {//angryoruが選ばれたら
-                        $("#todayMessage").html(angryyoru[random]);
-                        showMov;
-                        randomMov.src = (angryyoruMov[random]);
-                        number = 0;
+} else if (number == 32) {//angryoruが選ばれたら
+        $("#todayMessage").html(angryyoru[random]);
+        showMov;
+        randomMov.src = (angryyoruMov[random]);
+        number = 0;
 
 
 
-                    } else if (number == 41) {//sadasaが選ばれたら
-                        $("#todayMessage").html(sadasa[random]);
-                        showMov;
-                        randomMov.src = (sadasaMov[random]);
-                        number = 0;
+} else if (number == 41) {//sadasaが選ばれたら
+        $("#todayMessage").html(sadasa[random]);
+        showMov;
+        randomMov.src = (sadasaMov[random]);
+        number = 0;
 
 
-                    } else if (number == 42) {//sadyoruが選ばれたら
-                        $("#todayMessage").html(sadyoru[random]);
-                        showMov;
-                        randomMov.src = (sadyoruMov[random]);
-                        number = 0;
+} else if (number == 42) {//sadyoruが選ばれたら
+        $("#todayMessage").html(sadyoru[random]);
+        showMov;
+        randomMov.src = (sadyoruMov[random]);
+        number = 0;
 
 
-                    } else if (number == 51) {//borlingasaが選ばれたら
-                        $("#todayMessage").html(borlingasa[random]);
-                        showMov;
-                        randomMov.src = (borlingasaMov[random]);
-                        number = 0;
+} else if (number == 51) {//borlingasaが選ばれたら
+        $("#todayMessage").html(borlingasa[random]);
+        showMov;
+        randomMov.src = (borlingasaMov[random]);
+        number = 0;
 
 
-                    } else if (number == 52) {//borlingyoruが選ばれたら
-                        $("#todayMessage").html(borlingyoru[random]);
-                        showMov;
-                        randomMov.src = (borlingyoruMov[random]);
-                        number = 0;
+} else if (number == 52) {//borlingyoruが選ばれたら
+        $("#todayMessage").html(borlingyoru[random]);
+        showMov;
+        randomMov.src = (borlingyoruMov[random]);
+        number = 0;
 
 
                         
-                    } else if (number == 61) {//hungryasaが選ばれたら
-                        $("#todayMessage").html(hungryasa[random]);
-                        showMov;
-                        randomMov.src = (hungryasaMov[random]);
-                        number = 0;
+} else if (number == 61) {//hungryasaが選ばれたら
+        $("#todayMessage").html(hungryasa[random]);
+        showMov;
+        randomMov.src = (hungryasaMov[random]);
+        number = 0;
 
 
-                    } else if (number == 62) {//hungryyoruが選ばれたら
-                        $("#todayMessage").html(hungryyoru[random]);
-                        showMov;
-                        randomMov.src = (hungryyoruMov[random]);
-                        number = 0;
+} else if (number == 62) {//hungryyoruが選ばれたら
+        $("#todayMessage").html(hungryyoru[random]);
+        showMov;
+        randomMov.src = (hungryyoruMov[random]);
+        number = 0;
 
     
-                    } else if(number === 0) {
-                        alert("選択しなおしてください");
+} else if(number === 0) {
+        alert("選択しなおしてください");
                 
-                    } else {
-                        alert("ボタンは2つ押してください");
-                    }
+} else {
+        alert("ボタンは2つ押してください");
+}
                 
-                    $('.btn').removeClass('btn_none'); 
+$('.btn').removeClass('btn_none'); 
                 
-                });
+});
