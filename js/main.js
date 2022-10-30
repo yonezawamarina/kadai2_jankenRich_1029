@@ -10,23 +10,6 @@
 //     window.location.href = 'map.html';
 //   });
 
-  $('aa').on('click', function(){
-    window.location.href = 'nakami.html';
-  });
-
-
-
-
-
-
-
-
-
-// シーン２に行くためのボタン
-$('#title').on('click', function(){
-  document.getElementById( 'sound-file' ).play() ;
-  });
-
 
 
 
