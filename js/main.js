@@ -3,5 +3,7 @@ $('#title').on('click', function(){
   });
 
   // 次のページに移動したい
-  function clickBtn4(){
-}
+//   function clickBtn4(){
+// }
+
+
