@@ -1,11 +1,32 @@
+
+$(function() {
+    // 非表示に設定
+    $(".scene1_btn").click(function() {
+    $("#scene1").css("display", "none");
+    $('#scene2_se').get(0).play();
+    });
+    // 表示に設定
+    $(".scene1_btn").click(function() {
+    $("#scene2").css({"display":"block"});
+    });
+});
+
+
+
+
+
+// シーン２に行くためのボタン
 $('#title').on('click', function(){
   document.getElementById( 'sound-file' ).play() ;
   });
 
-  // 次のページに移動したいできていない
-//   function clickBtn4(){
-// }
 
+
+
+
+
+
+// シーン２のcss
 
 // 十の位を決める
 let tensmusic =""; //十の位 今の気分

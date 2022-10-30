@@ -9,87 +9,104 @@
 </head>
 <body>
   
-  <!-- <div class="loader">
-    <img src="pinkheart.png" alt="">
-</div> -->
+<!-- シーン１(トップ画面) -->
+<h1 class="title">
+  <div id="title"> あなたに最適のBGMをお届けします</div>
+</h1>
+
+<audio id="sound-file" preload="auto">
+  <source src="naminooto.mp3" type="">
+</audio>
+  
+
+<input type="button" value="ボタン4" onclick="clickBtn4()"/>
 
 
+
+
+
+
+
+  <!-- シーン２ -->
   <!-- 今の気分は？のimg -->
- <div class="kibun_container">
+<div id="scene2">
 
-    <div id="happy">
-        <img onclick="" src="happy.png"">
-        <p class="aa">めっちゃ元気</p>
+  <div class="kibun_container">
+
+      <div id="happy">
+          <img onclick="" src="happy.png"">
+          <p class="aa">めっちゃ元気</p>
+      </div>
+
+      <div id="sleepy">
+        <img src="sleepy.png"">
+        <p>眠い</p>
+      </div>
+
+      <div id="angry">
+        <img src="anger.png"">
+        <p>怒ってる</p>
+      </div>
+
+      <div id="sad">
+      <img src="sad.png"">
+      <p>泣ける</p>
     </div>
 
-    <div id="sleepy">
-      <img src="sleepy.png"">
-      <p>眠い</p>
-    </div>
+      <div id="borling">
+        <img src="borling.png"">
+        <p>退屈</p>
+      </div>
 
-    <div id="angry">
-      <img src="anger.png"">
-      <p>怒ってる</p>
-    </div>
+      <div id="hungry">
+        <img src="hungry.png"">
+        <p>お腹すいた</p>
+      </div>
 
-    <div id="sad">
-     <img src="sad.png"">
-     <p>泣ける</p>
-   </div>
-
-    <div id="borling">
-      <img src="borling.png"">
-      <p>退屈</p>
-    </div>
-
-    <div id="hungry">
-      <img src="hungry.png"">
-      <p>お腹すいた</p>
-    </div>
-
- </div>
-
-
-
-<!-- 今の時間は？のimg -->
-
-<div class="time_container">
-  <div id="asa">
-      <img src="asa.png" width="200px">
-      <p>朝</p>
   </div>
 
-  <div id="yoru">
-      <img src="yoru.png" width="200px">
-      <p>夜</p>
-  </div>
+
+
+    <!-- 今の時間は？のimg -->
+
+    <div class="time_container">
+      <div id="asa">
+          <img src="asa.png" width="200px">
+          <p>朝</p>
+      </div>
+
+      <div id="yoru">
+          <img src="yoru.png" width="200px">
+          <p>夜</p>
+      </div>
+    </div>
+
+
+
+    <!-- おすすめは？のボタン -->
+
+    <button type="button" class="btn btn_done" id="recommendBtn"><img src="heart.png" width="50px" class="heart_icon">お勧めは？</button>
+
+
+
+
+    <!-- 今日の格言メッセージ -->
+
+    <div>
+      <h2>そんなあなたへのの格言は．．．？ <span id="todayMessage">  </span> </h2>   
+    </div>
+
+
+
+    <!-- 今日のおすすめ動画 -->
+
+    <div id="movArea">
+      <iframe id="mov" class="mov" width="560" height="315" src="https://www.youtube.com/embed/j1KkrIVtnvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="imgArea"></div> 
+
+
 </div>
-
-
-
-<!-- おすすめは？のボタン -->
-
-<button type="button" class="btn btn_done" id="recommendBtn"><img src="heart.png" width="50px" class="heart_icon">お勧めは？</button>
-
-
-
-
-<!-- 今日の格言メッセージ -->
-
-<div>
-  <h2>そんなあなたへのの格言は．．．？ <span id="todayMessage">  </span> </h2>   
-</div>
-
-
-
-<!-- 今日のおすすめ動画 -->
-
-<div id="movArea">
-  <iframe id="mov" class="mov" width="560" height="315" src="https://www.youtube.com/embed/j1KkrIVtnvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div id="imgArea"></div> 
-
-
 
 
 
