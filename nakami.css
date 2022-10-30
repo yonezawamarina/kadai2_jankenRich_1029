@@ -1,6 +1,8 @@
+/* 気分画像をタイル型にレイアウト */
 .container{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-
 }
+
+
 
