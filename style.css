@@ -3,7 +3,7 @@
 	font-family: 'MyFont';
 	src: url(font/g_brushtappitsu_free_012/g_brushtappitsu_freeB.ttf);
 }
-body {
+.aa {
 	font-family: MyFont;
     background-image: url(asayake.jpeg);
     width: 100%;
@@ -29,3 +29,13 @@ html {
 }
 
 
+.kibun_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  
+  .time_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }

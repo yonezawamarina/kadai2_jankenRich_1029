@@ -1,8 +1,15 @@
 
 
+//  シーン１
+ // タイトルを押すと音楽が流れる
+ $('#titlemusic').on('click', function(){
+    document.getElementById( 'sound-file' ).play() ;
+    });
 
 
 
+
+    
 // シーン２
 
 // 十の位を決める
