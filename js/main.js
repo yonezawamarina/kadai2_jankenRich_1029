@@ -46,12 +46,9 @@ $("#asa").on("click" , function(){
    onesmusic = "1";
 });
 
-$("#hiru").on("click" , function(){
-    onesmusic = "2";
-});
 
 $("#yoru").on("click" , function(){
-  onesmusic = "3";
+  onesmusic = "2";
 });
 
 
@@ -102,47 +99,6 @@ var asahungryMov = [
     "https://tabelog.com/tokyo/A1313/A131303/13172776/"
 ]
 
-// ここから昼＋
-var hiruhappy = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
-var hiruhappyMov = [
-    "https://www.youtube.com/embed/OL8o03u8l2Y", //iframe埋め込み用のURL入れる
-    "https://www.youtube.com/embed/kDHVcnykE0Q",
-    "https://www.youtube.com/embed/q3ui4ZPPIPI"
-];
-
-var hirusleepy = ['目を覚まして', '朝ご飯はパンケーキ','起きろー'];
-var hirusleepyMov = [
-    "https://www.youtube.com/embed/Au-XRzpEjuA",
-    "https://www.youtube.com/embed/Jx-tqntWPCM",
-    "https://www.youtube.com/embed/nwJlMGMbmpw"
-];
-
-var hiruangry = ['いいことあるよ', '大丈夫','楽しいことを考えて'];
-var hiruangryMov = [ 
-    "https://www.youtube.com/embed/RNYUCIt4Fi0",
-    "https://www.youtube.com/embed/sWuDwn5_8KE",
-    "https://www.youtube.com/embed/GJSmXL9_oHY"
-];
-
-var hirusad = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
-var hirusadMov = [
-    "https://tabelog.com/tokyo/A1313/A131303/13227050/",
-    "https://tabelog.com/tokyo/A1313/A131307/13026915/",
-    "https://tabelog.com/tokyo/A1313/A131303/13264944/"
-];
-var hiruborling =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
-var hiruborling = [
-    "https://tabelog.com/tokyo/A1313/A131303/13121463/",
-    "https://tabelog.com/tokyo/A1313/A131303/13091906/",
-    "https://tabelog.com/tokyo/A1313/A131303/13185772/"
-];
-
-var hiruhungry = ['落ち着いて','怒ってもいいことないよ','最高にHappy'];
-var hiruhungryMov = [
-    "https://tabelog.com/tokyo/A1313/A131303/13040987/",
-    "https://tabelog.com/tokyo/A1313/A131303/13166405/",
-    "https://tabelog.com/tokyo/A1313/A131303/13172776/"
-]
 
 
 // ここから夜＋
@@ -191,11 +147,6 @@ var yoruhungryMov = [
 
 
 
-
-
-
-
-
 // if文
 let number = tensmusic + onesmusic; //箱の番号を決める
     const random = Math.floor(Math.random()*asahappy.length);//配列の何番目を取り出すか決める
@@ -210,13 +161,8 @@ let number = tensmusic + onesmusic; //箱の番号を決める
         randomMov.src = (happyasaMov[random]); //movで取り出した属性を書き換える;
         number = 0;},1000);
     
-    } else if(number == 21) { //happy hiruが選ばれたら
-        $("#todayMessage").html(happyhiru[random]);
-        showMov;
-        randomMov.src = (happyhiruMov[random]);
-        number = 0;
 
-    } else if(number == 31) { //happy yoruが選ばれたら
+    } else if(number == 12) { //happy yoruが選ばれたら
         $("#todayMessage").html(happyyoru[random]);
         showMov;
         randomMov.src = (happyyoruMov[random]);
@@ -225,20 +171,15 @@ let number = tensmusic + onesmusic; //箱の番号を決める
 
 
         // sleeppy
-        if(number == 11 ){ //sleepy asa が選ばれたら
+        if(number == 21 ){ //sleepy asa が選ばれたら
           setTimeout(function(){
           $("#todayMessage").html(sleepyasa[random]);
           showMov;
           randomMov.src = (sleepyasaMov[random]); //movで取り出した属性を書き換える;
           number = 0;},1000);
-      
-      } else if(number == 21) { //sleepy hituが選ばれたら
-          $("#todayMessage").html(sleepyhiru[random]);
-          showMov;
-          randomMov.src = (sleepyhiruMov[random]);
-          number = 0;
+    
   
-      } else if(number == 31) { //sleepy yoruが選ばれたら
+      } else if(number == 22) { //sleepy yoruが選ばれたら
           $("#todayMessage").html(sleepyyoru[random]);
           showMov;
           randomMov.src = (sleepyyoruMov[random]);
@@ -247,20 +188,15 @@ let number = tensmusic + onesmusic; //箱の番号を決める
 
           // angry
 
-          if(number == 11 ){ //angry asaが選ばれたら
+          if(number == 31 ){ //angry asaが選ばれたら
             setTimeout(function(){
             $("#todayMessage").html(angryasa[random]);
             showMov;
             randomMov.src = (angryasaMov[random]); //movで取り出した属性を書き換える;
             number = 0;},1000);
-        
-        } else if(number == 21) { //angry hiruが選ばれたら
-            $("#todayMessage").html(angryhiru[random]);
-            showMov;
-            randomMov.src = (angryhiruMov[random]);
-            number = 0;
     
-        } else if(number == 31) { //angry yoruが選ばれたら
+    
+        } else if(number == 32) { //angry yoruが選ばれたら
             $("#todayMessage").html(angryyoru[random]);
             showMov;
             randomMov.src = (angryyoruMov[random]);
@@ -270,20 +206,15 @@ let number = tensmusic + onesmusic; //箱の番号を決める
             
 
           //  sad
-            if(number == 11 ){ //sad asaが選ばれたら
+            if(number == 41 ){ //sad asaが選ばれたら
               setTimeout(function(){
               $("#todayMessage").html(sadasa[random]);
               showMov;
               randomMov.src = (sadasaMov[random]); //movで取り出した属性を書き換える;
               number = 0;},1000);
           
-          } else if(number == 21) { //sad hiruが選ばれたら
-              $("#todayMessage").html(sadhiru[random]);
-              showMov;
-              randomMov.src = (sadhiruMov[random]);
-              number = 0;
       
-          } else if(number == 31) { //sad yoruが選ばれたら
+          } else if(number == 42) { //sad yoruが選ばれたら
               $("#todayMessage").html(sadyoru[random]);
               showMov;
               randomMov.src = (sadyoruMov[random]);
@@ -292,20 +223,15 @@ let number = tensmusic + onesmusic; //箱の番号を決める
 
 
               // borlig
-              if(number == 11 ){ //borling asaが選ばれたら
+              if(number == 51 ){ //borling asaが選ばれたら
                 setTimeout(function(){
                 $("#todayMessage").html(borlingasa[random]);
                 showMov;
                 randomMov.src = (borlingasaMov[random]); //movで取り出した属性を書き換える;
                 number = 0;},1000);
-            
-            } else if(number == 21) { //borling hiruが選ばれたら
-                $("#todayMessage").html(borlinghiru[random]);
-                showMov;
-                randomMov.src = (borlinghiruMov[random]);
-                number = 0;
+  
         
-            } else if(number == 31) { //borling yoruが選ばれたら
+            } else if(number == 52) { //borling yoruが選ばれたら
                 $("#todayMessage").html(borlingyoru[random]);
                 showMov;
                 randomMov.src = (borlingyoruMov[random]);
@@ -315,20 +241,15 @@ let number = tensmusic + onesmusic; //箱の番号を決める
 
                 // angry
 
-                if(number == 11 ){ //angry asaが選ばれたら
+                if(number == 61 ){ //angry asaが選ばれたら
                   setTimeout(function(){
                   $("#todayMessage").html(angryasa[random]);
                   showMov;
                   randomMov.src = (angryasaMov[random]); //movで取り出した属性を書き換える;
                   number = 0;},1000);
               
-              } else if(number == 21) { //angry hiruが選ばれたら
-                  $("#todayMessage").html(angryhiru[random]);
-                  showMov;
-                  randomMov.src = (angryhiruMov[random]);
-                  number = 0;
           
-              } else if(number == 31) { //angry yoruが選ばれたら
+              } else if(number == 62) { //angry yoruが選ばれたら
                   $("#todayMessage").html(angryyoru[random]);
                   showMov;
                   randomMov.src = (angryyoruMov[random]);

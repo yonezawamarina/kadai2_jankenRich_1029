@@ -1,8 +1,11 @@
 /* 気分画像をタイル型にレイアウト */
-.container{
+.kibun_container{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 
-
+.time_container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
