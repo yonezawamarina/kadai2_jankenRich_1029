@@ -96,45 +96,45 @@ var hungryasaMov = [
 
 
 // ここから夜＋
-var happyyoru = ['今日も頑張ろう','落ち着いていきましょう','いけてるね'];
+var happyyoru = ['今日も１日頑張りました','明日もいい日になりますように','最高の１日'];
 var happyyoruMov = [
-    "", //iframe埋め込み用のURL入れる
-    "",
-    ""
+    "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
+    "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
+    "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
 var sleepyyoru = ['さっさと寝てしまおう', '今日も１日頑張りました','おやすみなさい'];
 var sleepyyoruMov = [
-    "", //iframe埋め込み用のURL入れる
-    "",
-    ""
+    "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
+    "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
+    "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
 var angryyoru = ['さっさと寝て忘れよう', '明日はきっと楽しいよ','落ち着いて～'];
 var angryyoruMov = [ 
     "https://www.youtube.com/embed/S-xjSO4Ucns",//焚火
-    "",
-    ""
+    "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
+    "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
-var sadyoru = ['楽しいことを考えよう' , '人間だものみちお' , '大丈夫大丈夫'];
+var sadyoru = ['楽しいことを考えよう' , '人間だものみちお' , '寝たらすべてわすれるよ'];
 var sadyoruMov = [
     "https://www.youtube.com/embed/5dwcsX4QTwE", //熟睡ヨガ
     "https://www.youtube.com/embed/b-vxJT1EsfI",//お休みピアノ
     "https://www.youtube.com/embed/cGGn0u5NaPY"//日本の絶景
 ];
-var borlingyoru =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
+var borlingyoru =['つまらないならさっさと寝ましょう', "明日の準備した？" ,'あいうえお'];
 var borlingyoru = [
-    "", //iframe埋め込み用のURL入れる
-    "",
-    ""
+    "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
+    "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
+    "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ];
 
 var hungryyoru = ['明日起きたらドカ食いしよう','水飲んで寝よう','我慢できないなら食べてもいいよ'];
 var hungryyoruMov = [
-    "", //iframe埋め込み用のURL入れる
-    "",
-    ""
+    "https://www.youtube.com/embed/5dwcsX4QTwE", //変更する熟睡ヨガ
+    "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
+    "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ]
 
 
