@@ -70,19 +70,19 @@ var angryasa = ['いいことあるよ', '大丈夫','楽しいことを考え�
 var angryasaMov = [ 
     "https://www.youtube.com/embed/n5hGn0uA9G8", //綺麗な曲
     "https://www.youtube.com/embed/E1UM8d8XPmw",//可愛い犬
-    ""
+    "www.youtube.com/embed/QSlY6Aq8M4A"//設楽さん名言
 ];
 
 var sadasa = ['今日は最高の日になる' , '人間だものみちお' , '大丈夫大丈夫'];
 var sadasaMov = [
-    "", //iframe埋め込み用のURL入れる
-    "",
-    ""
+    "https://www.youtube.com/embed/e53CqX8TrlE", //名言
+    "https://www.youtube.com/embed/vN_2KFrHz5s",//元気が出る歌
+    "https://www.youtube.com/embed/IHKXePkEdQg"//東京03コント
 ];
 var borlingasa =['楽しいことは自分から', "今日は楽しくいこう" ,'ロックだぜ'];
 var borlingasaMov = [
-    "", //iframe埋め込み用のURL入れる
-    "",
+    "https://www.youtube.com/embed/KF4LGDy81Ic", //モチベが上がる名言
+    "https://www.youtube.com/embed/-OHRY9HTfkc",//所さん名言
     ""
 ];
 
