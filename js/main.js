@@ -75,6 +75,23 @@ $("#yoru").on("click" , function(){
 
 
 
+//  追加ここから ----------------
+function getParam(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+if (getParam('onesmusic')) {
+    onesmusic = getParam('onesmusic');
+    console.log(onesmusic);
+}
+// 追加ここまで ----------------
+
 // 格言とお勧め動画
 // ここから朝＋
 var happyasa = ['今日も頑張ろう','かきくけこ','あいうえお'];
@@ -161,6 +178,8 @@ var hungryyoruMov = [
     "https://www.youtube.com/embed/b-vxJT1EsfI",//変更するお休みピアノ
     "https://www.youtube.com/embed/cGGn0u5NaPY"//変更する日本の絶景
 ]
+
+
 
 
 
