@@ -10,9 +10,9 @@
 
 
 
-// シーン２
+// シーン２---------------------------------------
 
-// 十の位を決める
+// 十の位を決める------------------------------------
 let tensmusic =""; //十の位 今の気分
 $("#happy").on("click" , function(){
     tensmusic = "1";
@@ -37,6 +37,27 @@ $("#borling").on("click" , function(){
 $("#hungry").on("click" , function(){
   tensmusic = "6";
 });
+
+
+
+
+//  追加ここから ----------------
+function getParam(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+if (getParam('tensmusic')) {
+    tensmusic = getParam('tensmusic');
+    console.log(tensmusic);
+}
+// 追加ここまで ----------------
+
 
 
 
