@@ -165,6 +165,7 @@ var hungryyoruMov = [
 
 $("#recommendBtn").on("click" , function(){
      $("#scene3").css("display", "none");
+     $("#scene4").css("display", "block");
     });
     
 
