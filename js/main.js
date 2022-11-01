@@ -163,7 +163,9 @@ var hungryyoruMov = [
 ]
 
 
-
+$("#recommendBtn").on("click" , function(){
+     $("#scene3").css("display", "none");
+    });
     
 
 // お勧めボタンをクリックした結果

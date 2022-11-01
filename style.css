@@ -35,13 +35,14 @@ html {
   }
   
   
-  .time_container{
+  #scene3{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* display: block; */
   }
 
 
   
-  /* #scene4{
+  #scene4{
     display: none;
-} */
+}
