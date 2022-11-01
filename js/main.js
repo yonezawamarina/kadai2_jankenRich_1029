@@ -75,22 +75,6 @@ $("#yoru").on("click" , function(){
 
 
 
-//  追加ここから ----------------
-function getParam(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-
-if (getParam('onesmusic')) {
-    onesmusic = getParam('onesmusic');
-    console.log(onesmusic);
-}
-// 追加ここまで ----------------
 
 // 格言とお勧め動画
 // ここから朝＋
@@ -134,7 +118,6 @@ var hungryasaMov = [
     "https://www.youtube.com/embed/MKPpy5zG0MM",//食パンレシピ
     "https://www.youtube.com/embed/Q8IFyz2ve3Y"//和食レシピ
 ]
-
 
 
 // ここから夜＋
@@ -181,19 +164,7 @@ var hungryyoruMov = [
 
 
 
-        // シーン3から4への遷移
-        // $(function() {
-        //     非表示に設定
-        //     $("#recommendBtn").click(function() {
-        //     $("#scene3").css("display", "none");
-            // $('#scene4_se').get(0).play();
-            // });
-            // 表示に設定
-        //     $("#recommendBtn").click(function() {
-        //     $("#scene4").css({"display":"block"});
-        //     });
-        // });
-
+    
 
 // お勧めボタンをクリックした結果
 
