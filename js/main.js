@@ -181,6 +181,18 @@ var hungryyoruMov = [
 
 
 
+        // シーン3から4への遷移
+        // $(function() {
+        //     非表示に設定
+        //     $("#recommendBtn").click(function() {
+        //     $("#scene3").css("display", "none");
+            // $('#scene4_se').get(0).play();
+            // });
+            // 表示に設定
+        //     $("#recommendBtn").click(function() {
+        //     $("#scene4").css({"display":"block"});
+        //     });
+        // });
 
 
 // お勧めボタンをクリックした結果
