@@ -207,6 +207,7 @@ html {
 
 /* シーン２ */
 
+/* タイトルアニメーション */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 .title {
@@ -303,20 +304,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /****** Base style. ******/
 body {
   display: flex;
@@ -326,24 +313,81 @@ body {
   margin: 0;
 }
 
+/***** タイトルアニメーションここまで ********/
 
 
-
-
-
-
-
-
-
+/*******気分のアイコンここから *********/
 .kibun_container{
     display:grid;
     justify-items: center;
     align-items: center;
     gap: 80px;
     grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20px;
   }
   
+
+  
+
+    #happy {
+      display: block;
+      transition-duration: .5s;
+    }
+    #happy:hover {
+      transform: scale(1.2);
+    }
+
+
+  
+    #sleepy {
+      display: block;
+      transition-duration: .5s;
+    }
+    #sleepy:hover {
+      transform: scale(1.2);
+    }
+  
+
+    #angry {
+      display: block;
+      transition-duration: .5s;
+    }
+    #angry:hover {
+      transform: scale(1.2);
+    }
  
+
+
+    #sad {
+      display: block;
+      transition-duration: .5s;
+    }
+    #sad:hover {
+      transform: scale(1.2);
+    }
+
+
+    #borling {
+      display: block;
+      transition-duration: .5s;
+    }
+    #borling:hover {
+      transform: scale(1.2);
+    }
+
+
+    #hungry {
+      display: block;
+      transition-duration: .5s;
+    }
+    #hungry:hover {
+      transform: scale(1.2);
+    }
+
+
+
+
+
 
 
   /* シーン３ */
