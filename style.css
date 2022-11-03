@@ -161,10 +161,23 @@ html {
   transition: padding 0.3s ease-in-out;
 } 
 
+.button{
+ position: absolute;
+ z-index:1;
+ 
+}
 
 .button{
-  
-}
+  position:absolute; 
+  bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); 
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+} 
+
+
 .button::before{
   content: "";
   position: absolute;
@@ -178,7 +191,8 @@ html {
   border-bottom: 3px solid #ffffff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+  z-index: -1;
+} 
 
 .button:hover{
   padding: 0.75rem 2.25rem;
@@ -188,11 +202,11 @@ html {
   top: 0;
   left: 0; 
 }
- 
+  
 
 
 
-        
+    
 
 
 /* シーン２ */
