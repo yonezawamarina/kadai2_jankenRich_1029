@@ -391,17 +391,47 @@ body {
 
 
   /* シーン３ */
-  #scene3{
-    display:grid;
+  .weather_container{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    gap: 80px;
     grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20px;
     /* display: block; */
-
-
   }
 
 
-  
+
+
+  #asa {
+    display: block;
+    transition-duration: .5s;
+  }
+  #asa:hover {
+    transform: scale(1.2);
+  }
+
+
+
+  #yoru {
+    display: block;
+    transition-duration: .5s;
+  }
+  #yoru:hover {
+    transform: scale(1.2);
+  }
+
+
+
+
+
+
+
+
+
   /* シーン４ */
+
   #scene4{
     display: none;
 }

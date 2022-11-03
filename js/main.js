@@ -25,11 +25,24 @@ setInterval(() => {
 
 
 
+// ----------------------------------------------
+
+$('#aaa').on('click', function(){
+    document.getElementById( "soundscene2" ).play() ;
+    });
+
+
+
+
+
+
 
 
 
 
 // 十の位を決める------------------------------------
+
+
 let tensmusic =""; //十の位 今の気分
 $("#happy").on("click" , function(){
     tensmusic = "1";
