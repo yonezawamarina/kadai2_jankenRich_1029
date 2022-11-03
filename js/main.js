@@ -111,14 +111,14 @@ $("#yoru").on("click" , function(){
 var happyasa = ['「はい、ラジオ体操始めよう！」','「♬素晴らしい朝がきた、希望の朝だ♬」','「いい日になる気しかしない」'];
 var happyasaMov = [
     "https://www.youtube.com/embed/P__rOlVnId4", //オーケストララジオ体操第一
-    "https://www.youtube.com/embed/3pP3bDi_GOg",//大阪弁ラジオ体操
+    "https://www.youtube.com/embed/PBRGLbrlUEk",//ムックラジオ体操
     "https://www.youtube.com/embed/_YZZfaMGEOU"//ラジオ体操第一
 ]
 
 var sleepyasa = ['「動けば眠気も吹き飛ぶぞっ！」', '「起きろ～～～」','「目を覚ませ～～」'];
 var sleepyasaMov = [
     "https://www.youtube.com/embed/xR4qXUwsp9Q", //xjapan
-    "https://www.youtube.com/embed/ZSZoJrNKCJ4",//ストレッチ
+    "https://www.youtube.com/embed/1Z3SifFe4RM",//ストレッチ
     "https://www.youtube.com/embed/7tWAjt8B-cM"//jazz
 ];
 
@@ -127,7 +127,7 @@ var sleepyasaMov = [
 var angryasaMov = [ 
     "https://www.youtube.com/embed/n5hGn0uA9G8", //綺麗な曲
     "https://www.youtube.com/embed/E1UM8d8XPmw",//可愛い犬
-    "www.youtube.com/embed/QSlY6Aq8M4A"//設楽さん名言
+    "https://www.youtube.com/embed/29aGTAGHX70"//イチロー名言
 ];
 
 var sadasa = ['「そんな日もあるでしょう」' , '「ご飯食べれば元気になるよ～～」' , '「はい、笑ってください～」'];
@@ -139,7 +139,7 @@ var sadasaMov = [
 var borlingasa =['「今日も生きてることに感謝～～」','「今日は楽しいでしょう」','「はい、笑って～」'];
 var borlingasaMov = [
     "https://www.youtube.com/embed/KF4LGDy81Ic", //モチベが上がる名言
-    "https://www.youtube.com/embed/-OHRY9HTfkc",//所さん名言
+    "https://www.youtube.com/embed/bolSMy9VQRA",//所さん名言
     "https://www.youtube.com/embed/lLF5hWK3IfY"//見てて飽きないお焼きの作り方
 ];
 
@@ -148,7 +148,7 @@ var hungryasaMov = [
     "https://www.youtube.com/embed/JwFPuEX7lU8", //コンビニ朝ごはん
     "https://www.youtube.com/embed/MKPpy5zG0MM",//食パンレシピ
     "https://www.youtube.com/embed/Q8IFyz2ve3Y"//和食レシピ
-]
+];
 
 
 // ここから夜＋
