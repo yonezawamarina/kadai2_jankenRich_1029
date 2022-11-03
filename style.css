@@ -152,6 +152,7 @@ html {
 /* 花びら舞う背景ここまで */
 
 
+/* シーン２にいくためのボタン */
 .button{
   position: relative;
   padding: 1rem 2rem 0.5rem 2.5rem;
@@ -164,7 +165,6 @@ html {
 .button{
  position: absolute;
  z-index:1;
- 
 }
 
 .button{
@@ -174,7 +174,6 @@ html {
     transform: translateX(-50%); 
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-
 } 
 
 
@@ -202,25 +201,35 @@ html {
   top: 0;
   left: 0; 
 }
-  
+/* シーン２へのボタンここまで */
 
 
 
-    
 
 
 /* シーン２ */
+
+
+
+
 .kibun_container{
     display:grid;
+    justify-items: center;
+    align-items: center;
+    gap: 80px;
     grid-template-columns: 1fr 1fr 1fr;
   }
   
-  
+ 
+
+
   /* シーン３ */
   #scene3{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* display: block; */
+
+
   }
 
 
