@@ -12,6 +12,23 @@
 
 // シーン２---------------------------------------
 
+const CLASSNAME = "-visible";
+const TIMEOUT = 1500;
+const $target = $(".title");
+
+setInterval(() => {
+  $target.addClass(CLASSNAME);
+  setTimeout(() => {
+    $target.removeClass(CLASSNAME);
+  }, TIMEOUT);
+}, TIMEOUT * 2);
+
+
+
+
+
+
+
 // 十の位を決める------------------------------------
 let tensmusic =""; //十の位 今の気分
 $("#happy").on("click" , function(){

@@ -5,9 +5,9 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(#f7c6bd, #fff);
+  background: linear-gradient(pink, #fff);
 }
-
+#f7c6bd
 
 
 /* 花びら舞う背景 */
@@ -205,13 +205,134 @@ html {
 
 
 
-
-
 /* シーン２ */
 
-.scene2title{
-  
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.title {
+  display: flex;
+  overflow: hidden;
+  color: #aa8f7b;
+  font-family: 'Josefin Sans', sans-serif;
 }
+
+.title span {
+  display: block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.title.-visible span {
+  transform: translate(0, 0);
+}
+
+.title span:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.title span:nth-child(3) {
+  transition-delay: 0.23s;
+}
+.title span:nth-child(4) {
+  transition-delay: 0.26s;
+}
+.title span:nth-child(5) {
+  transition-delay: 0.29s;
+}
+.title span:nth-child(6) {
+  transition-delay: 0.32s;
+}
+.title span:nth-child(7) {
+  transition-delay: 0.35s;
+}
+.title span:nth-child(8) {
+  transition-delay: 0.38s;
+}
+.title span:nth-child(9) {
+  transition-delay: 0.41s;
+}
+.title span:nth-child(10) {
+  transition-delay: 0.44s;
+}
+.title span:nth-child(11) {
+  transition-delay: 0.47s;
+}
+.title span:nth-child(12) {
+  transition-delay: 0.48s;
+}
+.title span:nth-child(13) {
+  transition-delay: 0.51s;
+}
+.title span:nth-child(14) {
+  transition-delay: 0.54s;
+}
+.title span:nth-child(14) {
+  transition-delay: 0.57s;
+}
+.title span:nth-child(15) {
+  transition-delay: 0.60s;
+}
+.title span:nth-child(16) {
+  transition-delay: 0.63s;
+}
+.title span:nth-child(17) {
+  transition-delay: 0.66s;
+}
+.title span:nth-child(18) {
+  transition-delay: 0.69s;
+}
+.title span:nth-child(19) {
+  transition-delay: 0.72s;
+}
+.title span:nth-child(20) {
+  transition-delay: 0.75s;
+}
+.title span:nth-child(21) {
+  transition-delay: 0.78s;
+}
+.title span:nth-child(22) {
+  transition-delay: 0.81s;
+}
+.title span:nth-child(23) {
+  transition-delay: 0.84s;
+}
+.title span:nth-child(24) {
+  transition-delay: 0.87s;
+}
+.title span:nth-child(25) {
+  transition-delay: 0.90s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** Base style. ******/
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
 
 
 .kibun_container{
