@@ -423,14 +423,19 @@ body {
     transform: scale(1.2);
   }
 
+  #recommendBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
 
 
 
 
 
 
-
-  .btn btn_done{
+  /* .btn btn_done{
     position: relative;
     padding: 1rem 2rem 0.5rem 2.5rem;
     color: #000000;
@@ -477,7 +482,7 @@ body {
   .btn btn_done:hover:before{
     top: 0;
     left: 0; 
-  }
+  } */
   /* シーン２へのボタンここまで
 
 
