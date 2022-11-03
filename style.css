@@ -152,30 +152,57 @@ html {
 /* 花びら舞う背景ここまで */
 
 
+.button{
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2.5rem;
+  color: #000000;
+  border: 3px solid #776e62;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+} 
+
+
+.button{
+  
+}
+.button::before{
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+  padding: 0.75rem 2.25rem;
+}
+
+.button:hover:before{
+  top: 0;
+  left: 0; 
+}
+ 
 
 
 
+        
 
 
-
-
-/* .aa {
-	font-family: MyFont;
-    background-image: url(asayake.jpeg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-
-
-/* sシーン２ */
+/* シーン２ */
 .kibun_container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   
   
+  /* シーン３ */
   #scene3{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -184,6 +211,7 @@ html {
 
 
   
+  /* シーン４ */
   #scene4{
     display: none;
 }
